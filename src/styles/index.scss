@@ -1,0 +1,57 @@
+html {
+  font-size: 75%;
+
+  @media screen and (width > 480px) {
+    font-size: 87.5%;
+  }
+  @media screen and (width > 767px) {
+    font-size: 100%;
+  }
+  @media screen and (width > 992px) {
+    font-size: 112.5%;
+  }
+  @media screen and (width > 1278px) {
+    font-size: 125%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  block-size: 100%;
+}
+
+:root {
+  --base-fs: 1rem;
+  --base-padding: 0.5em;
+  --base-margin: 0.5em;
+  --base-br: 20px;
+  --base-lh: 1.5;
+  --base-gap: 0.5em;
+
+  --fw-regular: 400;
+  --fw-medium: calc(var(--fw-regular) + 100);
+  --fw-semi: calc(var(--fw-medium) + 100);
+  --fw-bold: calc(var(--fw-semi) + 100);
+
+  // Font Stacks
+  --fs-roboto: "Roboto", sans-serif;
+}
+
+body {
+  font: var(--fw-regular) var(--base-fs) / var(--base-lh) var(--fs-roboto);
+}

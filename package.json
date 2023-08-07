@@ -1,0 +1,51 @@
+{
+  "name": "periodic-table",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "name": "Rahul Kumar",
+    "email": "rahulkumar109422@gmail.com"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "endOfLine": "auto",
+    "trailingComma": "none",
+    "semi": true
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.25%",
+      "not dead",
+      "not op_mini all",
+      "not IE 11"
+    ]
+  },
+  "scripts": {
+    "dev": "vite serve",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss-preset-env": "^9.1.1",
+    "sass": "^1.64.2",
+    "terser": "^5.19.2",
+    "vite": "^4.1.0"
+  }
+}
